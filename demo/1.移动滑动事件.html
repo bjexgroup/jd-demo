@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        var div = document.querySelector('div');
+        // touchstart 触摸开始的时候触发 每次滑动会触发一次
+        // div.addEventListener('touchstart', function (e) {
+        //     console.log('触摸开始了');
+        //     console.log(e);
+            
+        // });
+        // touchmove 触摸并且滑动的时候会触发 一次滑动会触发多次
+        div.addEventListener('touchmove', function (e) {
+            console.log('滑动的时候会触发');
+            console.log(e);
+            
+        });/*
+        // touchend 触摸结束的时候触发 一次滑动会触发一次
+        div.addEventListener('touchend', function (e) {
+            console.log('触摸结束（松开手会触发)');
+            console.log(e);
+            
+        });
+        // touchcancel触摸中断会触发的时间  比如突然来电话  用的很少
+        div.addEventListener('touchcancel', function (e) {
+            console.log('异常中断会触发');
+            console.log(e);
+            
+        });*/
+    </script>
+</body>
+
+</html>
